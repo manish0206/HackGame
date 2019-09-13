@@ -41,4 +41,6 @@ dependencies {
     implementation project(path: ':library')
     implementation project(':react-native-immersive')
     implementation project(':react-native-svg')
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
 }

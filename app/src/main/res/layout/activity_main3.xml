@@ -2,12 +2,44 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/image9"
+        android:orientation="vertical">
+
+        <ImageView
+         android:id="@+id/image10"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/heart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/image9"
+         android:background="#dc475d"/>
+
+        <ImageView
+            android:id="@+id/image11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:scaleType="centerInside"
+            android:src="@drawable/love"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image10" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/image9"
-        android:layout_width="413dp"
-        android:layout_height="71dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#000000"
         android:fontFamily="@font/appleberry_with_cyrillic"
         android:gravity="center_horizontal"
@@ -17,21 +49,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-<ImageView
-    android:id="@+id/image10"
-    android:layout_width="415dp"
-    android:layout_height="296dp"
-    android:src="@drawable/heart"
-    app:layout_constraintTop_toBottomOf="@id/image9"
-    android:background="#dc475d"
-    tools:layout_editor_absoluteX="-2dp" />
-    <ImageView
-        android:id="@+id/image11"
-        android:layout_width="415dp"
-        android:layout_height="296dp"
-        android:src="@drawable/balloon"
-        app:layout_constraintTop_toBottomOf="@id/image10"
-        android:background="#FFFF00"
-        tools:layout_editor_absoluteX="-2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

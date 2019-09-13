@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dc475d">
+    <TextView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:fontFamily="@font/appleberry_with_cyrillic"
+        android:gravity="center_horizontal"
+        android:text="Select a game mode"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/image4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/image5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/love"
+                />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/image6"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/appleberry_with_cyrillic"
+                android:text="LOVE"
+                android:textColor="#ffffff"
+                android:textSize="28sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/image7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/stress"
+                />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/image8"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/appleberry_with_cyrillic"
+                android:text="HATE"
+                android:textColor="#ffffff"
+                android:textSize="28sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
