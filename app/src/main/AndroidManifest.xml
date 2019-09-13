@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.contoso.demoapp">
+    package="com.hack.stressbuster">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
@@ -31,14 +31,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ReactDemoActivity"
+            android:name="nativemodule.ReactDemoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="landscape"
         />
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="nativemodule.MainActivity" />
         <activity android:name="nativemodule.ImageChooserActivity" />
         <activity android:name="nativemodule.CartoonImageActivity" />
     </application>

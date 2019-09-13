@@ -16,8 +16,6 @@ public class NeonFilter {
 	public static Bitmap changeToNeon(Bitmap bitmap, int r, int g, int b) {
 		int width = bitmap.getWidth();
 		int height = bitmap.getHeight();
-		
-		
 		int[] pixels = new int[width * height];
 		bitmap.getPixels(pixels, 0, width, 0, 0, width, height);
 		

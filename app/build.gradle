@@ -4,12 +4,13 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "com.contoso.demoapp"
+        applicationId "com.hack.stressbuster"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     configurations.all {
@@ -41,6 +42,11 @@ dependencies {
     implementation project(path: ':library')
     implementation project(':react-native-immersive')
     implementation project(':react-native-svg')
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    // Network Library
+
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
 }

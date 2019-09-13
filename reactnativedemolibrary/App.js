@@ -16,7 +16,7 @@ import Circle from './circle';
 import Box from './box';
 import {Finger} from './finger';
 import line from './line';
-import {Immersive} from 'react-native-immersive';
+//import {Immersive} from 'react-native-immersive';
 import {getAngle} from './utility';
 import Dialog from 'react-native-popup-dialog';
 import {
@@ -27,8 +27,8 @@ import {
 	potHoleSettings,
 } from './settings';
 
-Immersive.on();
-Immersive.setImmersive(true);
+//Immersive.on();
+//Immersive.setImmersive(true);
 
 const {Bodies} = Matter;
 
@@ -500,6 +500,7 @@ export default class App extends PureComponent {
 	}
 
 	render() {
+	console.warn(this.props)
 		return (
 			<GameEngine
 				style={styles.container}

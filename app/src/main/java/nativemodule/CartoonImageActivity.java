@@ -1,23 +1,33 @@
 package nativemodule;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
-import com.contoso.demoapp.MainActivity;
-import com.contoso.demoapp.R;
-import com.contoso.demoapp.ReactDemoActivity;
 import com.contoso.reactnativedemolibrary.ReactNativeDemoLibrary;
+import com.facebook.soloader.SoLoader;
+import com.hack.stressbuster.R;
 import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.io.File;
+
+import cn.Ragnarok.BitmapFilter;
 
 public class CartoonImageActivity extends AppCompatActivity {
     String imageUrl;
@@ -50,4 +60,10 @@ public class CartoonImageActivity extends AppCompatActivity {
         }
 
     }
+
+
+    /**
+     * Activity hosting React Native demo.
+     */
+
 }
