@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/image9"
+        android:layout_width="413dp"
+        android:layout_height="71dp"
+        android:background="#000000"
+        android:fontFamily="@font/appleberry_with_cyrillic"
+        android:gravity="center_horizontal"
+        android:text="Select your weapon"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/image10"
+    android:layout_width="415dp"
+    android:layout_height="296dp"
+    android:src="@drawable/heart"
+    app:layout_constraintTop_toBottomOf="@id/image9"
+    android:background="#dc475d"
+    tools:layout_editor_absoluteX="-2dp" />
+    <ImageView
+        android:id="@+id/image11"
+        android:layout_width="415dp"
+        android:layout_height="296dp"
+        android:src="@drawable/balloon"
+        app:layout_constraintTop_toBottomOf="@id/image10"
+        android:background="#FFFF00"
+        tools:layout_editor_absoluteX="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

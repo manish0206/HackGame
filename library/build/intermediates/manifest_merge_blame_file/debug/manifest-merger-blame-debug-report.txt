@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="9"
-8-->/Users/manish/Desktop/HackGame/library/AndroidManifest.xml
+8-->/Users/admin/Documents/hack/HackGame/library/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/manish/Desktop/HackGame/library/AndroidManifest.xml
+9-->/Users/admin/Documents/hack/HackGame/library/AndroidManifest.xml
 10
 11</manifest>
