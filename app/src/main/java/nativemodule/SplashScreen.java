@@ -6,7 +6,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.contoso.demoapp.R;
+import com.hack.stressbuster.R;
+
 
 public class SplashScreen extends AppCompatActivity {
 
