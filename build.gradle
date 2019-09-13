@@ -24,6 +24,7 @@ allprojects {
         maven {
             url "$rootDir/reactnativedemolibrary/node_modules/jsc-android/dist"
         }
+
     }
 
     repositories {

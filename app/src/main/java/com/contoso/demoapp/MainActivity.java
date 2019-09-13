@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Bitmap myLogo = ((BitmapDrawable) ResourcesCompat.getDrawable(getResources(), R.drawable.ic_launcher, null)).getBitmap();
 
         imageView.setImageBitmap(myLogo);
-        updateView(myLogo);
+//        updateView(myLogo);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

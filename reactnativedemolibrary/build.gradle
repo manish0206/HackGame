@@ -97,6 +97,10 @@ task copyJscAndroidTask(type: Copy) {
     from "$rootDir/reactnativedemolibrary/node_modules/jsc-android/dist"
     into "$rootDir/../Artifacts/maven"
 }
+task copyImersiveAndroidTask(type: Copy) {
+    from "$rootDir/reactnativedemolibrary/node_modules//dist"
+    into "$rootDir/../Artifacts/maven"
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
