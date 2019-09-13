@@ -23,8 +23,9 @@ public class ReactDemoActivity extends AppCompatActivity {
     private static final int OVERLAY_PERMISSION_REQ_CODE = 9000;
     String imageUrl;
 
-    public static void openActivity(Context context) {
+    public static void openActivity(Context context,String imageUrl) {
         Intent intent = new Intent(context, ReactDemoActivity.class);
+        intent.putExtra("imageUrl",imageUrl);
         context.startActivity(intent);
     }
 
