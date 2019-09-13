@@ -13,6 +13,8 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.shell.MainReactPackage;
+import com.horcrux.svg.SvgPackage;
+import com.rnimmersive.RNImmersivePackage;
 
 /**
  * Public interface to React Native Demo Library.
@@ -90,6 +92,8 @@ public final class ReactNativeDemoLibrary {
                     .setJSMainModulePath("index")
                     .addPackage(new MainReactPackage())
                     .addPackage(new DemoReactPackage())
+                    .addPackage(new RNImmersivePackage())
+                    .addPackage(new SvgPackage())
                     .setUseDeveloperSupport(useDeveloperSupport)
                     .setInitialLifecycleState(LifecycleState.BEFORE_RESUME)
                     .build();

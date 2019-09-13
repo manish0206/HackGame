@@ -38,4 +38,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation project(path: ':reactnativedemolibrary')
     implementation project(path: ':library')
+    implementation project(':react-native-immersive')
+    implementation project(':react-native-svg')
 }

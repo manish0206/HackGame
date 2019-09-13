@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/HackGame.iml" filepath="$PROJECT_DIR$/HackGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/react-native-immersive.iml" filepath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/react-native-immersive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/react-native-svg.iml" filepath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/react-native-svg.iml" />
       <module fileurl="file://$PROJECT_DIR$/reactnativedemolibrary/reactnativedemolibrary.iml" filepath="$PROJECT_DIR$/reactnativedemolibrary/reactnativedemolibrary.iml" />
     </modules>
   </component>
