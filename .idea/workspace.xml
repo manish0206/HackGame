@@ -10,50 +10,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb7e573-4a57-4a8d-8cd4-070b1d673bde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_12_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_urlconnection_3_12_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_15_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_webkit_android_jsc_r245459_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HackGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageChooserActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/SplashScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/blank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/camera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/gallery.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/appleberry_with_cyrillic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/image_chooser.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/build/.transforms/1f596bac174e1a85310d682d60495a4b.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/build/.transforms/d96070eff1e7b1bd65f89aede4181d34.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/build/.transforms/d96070eff1e7b1bd65f89aede4181d34/full/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/contoso/demoapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/contoso/demoapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/0414ebfbf1742ff6d4d5ddf9e325b91e.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/0414ebfbf1742ff6d4d5ddf9e325b91e/full/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/1f596bac174e1a85310d682d60495a4b.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/3c2d2416f24c3c0dbfb1eca863ff0da9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/7226f03d0bc95ca492beb5da71f19a2f.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/7226f03d0bc95ca492beb5da71f19a2f/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/8eb9e787f1abcaa8bc5a5a60220ce48b.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/8eb9e787f1abcaa8bc5a5a60220ce48b/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/c2f5c62cd6f74568466b8194e55f109e.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/d96070eff1e7b1bd65f89aede4181d34.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/.transforms/d96070eff1e7b1bd65f89aede4181d34/full/classes.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/generated/source/buildConfig/androidTest/debug/cn/Ragnarok/test/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/intermediate-jars/debug/jni/armeabi/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/intermediate-jars/debug/jni/mips/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/intermediate-jars/debug/jni/x86/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/BitmapFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/BlockFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/BlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/GaussianBlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/GothamFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/GrayFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/HDRFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/InvertFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/LightFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/LomoFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/MotionBlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/NativeFilterFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/NeonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/OilFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/OldFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/PixelateFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/ReliefFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/SharpenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/SketchFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/SoftGlowFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/classes/cn/Ragnarok/TvFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/BitmapFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/BlockFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/BlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/GaussianBlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/GothamFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/GrayFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/HDRFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/InvertFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/LightFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/LomoFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/MotionBlurFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/NativeFilterFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/NeonFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/OilFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/OldFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/PixelateFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/ReliefFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/SharpenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/SketchFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/SoftGlowFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/Ragnarok/TvFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/library_java_res/debug/res.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_jni_libs/debug/out/armeabi/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_jni_libs/debug/out/mips/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_jni_libs/debug/out/x86/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_native_libs/debug/out/lib/armeabi/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_native_libs/debug/out/lib/mips/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_native_libs/debug/out/lib/x86/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/stripped_native_libs/debug/out/lib/mips/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/stripped_native_libs/debug/out/lib/x86/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/symbols/debug/R.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/debug/0/lib/mips/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libAndroidImageFilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +133,7 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ZF6223GWG6" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -88,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/contoso/demoapp/ReactDemoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="27" selection-end-column="5" />
+              <caret line="23" selection-start-line="23" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -96,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/SplashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#472#642#0" expanded="true" />
@@ -152,7 +220,7 @@
         <entry file="file://$PROJECT_DIR$/reactnativedemolibrary/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="90" column="54" lean-forward="true" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
+              <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -292,7 +360,17 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HackGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HackGame" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -486,7 +564,7 @@
     <entry file="file://$PROJECT_DIR$/reactnativedemolibrary/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="90" column="54" lean-forward="true" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
+          <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -501,7 +579,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/contoso/demoapp/ReactDemoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="27" selection-end-column="5" />
+          <caret line="23" selection-start-line="23" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -524,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/SplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#472#642#0" expanded="true" />
