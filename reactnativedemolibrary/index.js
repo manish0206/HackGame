@@ -22,9 +22,13 @@ class HelloWorld extends React.Component {
   }
 
   render() {
+  alert(this.props.images);
+  console.warn(this.props.images)
     return (
       <View style={styles.container}>
         <Text style={styles.hello}>Welcome to react native! from{"\n" + this.state.libraryName}</Text>
+
+
       </View>
     )
   }

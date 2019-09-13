@@ -3,6 +3,7 @@ package com.contoso.reactnativedemolibrary;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,11 @@ import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.shell.MainReactPackage;
+import com.horcrux.svg.SvgPackage;
+import com.rnimmersive.RNImmersivePackage;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Public interface to React Native Demo Library.
@@ -90,6 +96,8 @@ public final class ReactNativeDemoLibrary {
                     .setJSMainModulePath("index")
                     .addPackage(new MainReactPackage())
                     .addPackage(new DemoReactPackage())
+                    .addPackage(new RNImmersivePackage())
+                    .addPackage(new SvgPackage())
                     .setUseDeveloperSupport(useDeveloperSupport)
                     .setInitialLifecycleState(LifecycleState.BEFORE_RESUME)
                     .build();
@@ -97,8 +105,13 @@ public final class ReactNativeDemoLibrary {
 
         ActivityLifeCycleHandler lifeCycleHandler = new ActivityLifeCycleHandler(activity, reactInstanceManager);
         activity.getApplication().registerActivityLifecycleCallbacks(lifeCycleHandler);
-
         ReactRootView reactRootView = new ReactRootView(activity);
+        Bundle updatedProps = new Bundle();
+        ArrayList<String> imageList = new ArrayList<String>(Arrays.asList(
+                "https://i.pinimg.com/236x/a5/c1/66/a5c166ccbbbb3e5c61c8e504e1c1a7ef--barnyard-animals-baby-ducks.jpg"
+        ));
+        updatedProps.putString("images", "https://i.pinimg.com/236x/a5/c1/66/a5c166ccbbbb3e5c61c8e504e1c1a7ef--barnyard-animals-baby-ducks.jpg");
+        reactRootView.setAppProperties(updatedProps);
         reactRootView.startReactApplication(reactInstanceManager, "HelloWorld");
         return reactRootView;
     }
