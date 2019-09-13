@@ -15,9 +15,10 @@ import com.contoso.demoapp.ReactDemoActivity;
 public class ImageChooserActivity extends AppCompatActivity {
 
     public static void openActivity(Context context) {
-        Intent intent=new Intent(context, ImageChooserActivity.class);
+        Intent intent = new Intent(context, ImageChooserActivity.class);
         context.startActivity(intent);
     }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

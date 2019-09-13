@@ -21,15 +21,17 @@ import com.facebook.soloader.SoLoader;
 public class ReactDemoActivity extends AppCompatActivity {
 
     private static final int OVERLAY_PERMISSION_REQ_CODE = 9000;
+    String imageUrl;
 
     public static void openActivity(Context context) {
-        Intent intent=new Intent(context,ReactDemoActivity.class);
+        Intent intent = new Intent(context, ReactDemoActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       imageUrl= getIntent().getStringExtra("imageUrl");
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
             Intent intent = new Intent(
                     Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
@@ -63,7 +65,7 @@ public class ReactDemoActivity extends AppCompatActivity {
     }
 
     private void openReactView() {
-        View view = ReactNativeDemoLibrary.createHelloWorldView(this, true);
+        View view = ReactNativeDemoLibrary.createHelloWorldView(this, true, imageUrl);
         setContentView(view);
     }
 }

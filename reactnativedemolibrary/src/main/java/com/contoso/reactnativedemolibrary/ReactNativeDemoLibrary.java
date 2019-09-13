@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 
 import com.contoso.reactnativedemolibrary.internal.ActivityLifeCycleHandler;
 import com.contoso.reactnativedemolibrary.internal.DemoReactPackage;
+import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
@@ -45,11 +47,11 @@ public final class ReactNativeDemoLibrary {
 
     /**
      * Holds the singleton {@link ReactInstanceManager}.
-     *
+     * <p>
      * The "context leak" warning can be ignored; the {@link Context} in question is in fact the
      * application context -- the only one guaranteed to live for the lifetime of the application.
      * It cannot leak.
-     *
+     * <p>
      * https://nfrolov.wordpress.com/2014/07/12/android-using-context-statically-and-in-singletons/
      */
     @SuppressLint("StaticFieldLeak")
@@ -67,15 +69,15 @@ public final class ReactNativeDemoLibrary {
     /**
      * Create a react-native "HelloWorld" {@link ReactRootView}.
      *
-     * @param activity The {@link Activity} that will host the {@code View}.
+     * @param activity            The {@link Activity} that will host the {@code View}.
      * @param useDeveloperSupport Pass {@code true} to load JS from development server. This requires
      *                            overlay permission. Host applications should generally pass {@code false}.
      *                            Pass the same value every time.
      * @return a new react-native "HelloWorld" {@link ReactRootView}.
-     * @exception IllegalArgumentException if {@code activity == null} or this method has previously
-     * been called with a different value for {@code useDeveloperSupport}.
+     * @throws IllegalArgumentException if {@code activity == null} or this method has previously
+     *                                  been called with a different value for {@code useDeveloperSupport}.
      */
-    public static View createHelloWorldView(@NonNull Activity activity, boolean useDeveloperSupport) {
+    public static View createHelloWorldView(@NonNull Activity activity, boolean useDeveloperSupport,String imageUrl) {
         //noinspection ConstantConditions
         if (activity == null) {
             throw new IllegalArgumentException("Null activity passed to ReactNativeDemoLibrary.start");
@@ -102,17 +104,13 @@ public final class ReactNativeDemoLibrary {
                     .setInitialLifecycleState(LifecycleState.BEFORE_RESUME)
                     .build();
         }
-
         ActivityLifeCycleHandler lifeCycleHandler = new ActivityLifeCycleHandler(activity, reactInstanceManager);
         activity.getApplication().registerActivityLifecycleCallbacks(lifeCycleHandler);
         ReactRootView reactRootView = new ReactRootView(activity);
         Bundle updatedProps = new Bundle();
-        ArrayList<String> imageList = new ArrayList<String>(Arrays.asList(
-                "https://i.pinimg.com/236x/a5/c1/66/a5c166ccbbbb3e5c61c8e504e1c1a7ef--barnyard-animals-baby-ducks.jpg"
-        ));
-        updatedProps.putString("images", "https://i.pinimg.com/236x/a5/c1/66/a5c166ccbbbb3e5c61c8e504e1c1a7ef--barnyard-animals-baby-ducks.jpg");
-        reactRootView.setAppProperties(updatedProps);
-        reactRootView.startReactApplication(reactInstanceManager, "HelloWorld");
+        updatedProps.putString("images", imageUrl);
+        reactRootView.startReactApplication(reactInstanceManager, "HelloWorld",updatedProps);
         return reactRootView;
     }
+
 }

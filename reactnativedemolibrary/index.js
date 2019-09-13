@@ -11,8 +11,8 @@ import {
 
 class HelloWorld extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {libraryName: ""};
   }
 
@@ -22,8 +22,9 @@ class HelloWorld extends React.Component {
   }
 
   render() {
-  alert(this.props.images);
-  console.warn(this.props.images)
+  alert(this.props);
+  console.warn(this.props)
+  console.log(this.props)
     return (
       <View style={styles.container}>
         <Text style={styles.hello}>Welcome to react native! from{"\n" + this.state.libraryName}</Text>
