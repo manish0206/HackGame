@@ -24,7 +24,7 @@ public class ImageFilter {
 
     public static Bitmap getFilteredBitmap(Bitmap bitmap) {
         Bitmap resizedBitmap = getResizedBitmap(bitmap, 100, 100);
-        return resizedBitmap;
+        return BitmapFilter.changeStyle(resizedBitmap, BitmapFilter.INVERT_STYLE, sigma);
 
     }
 
