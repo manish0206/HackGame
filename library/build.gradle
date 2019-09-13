@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion "android-29"
+    sourceSets {
+        main {
+            java.srcDirs 'src'
+
+            res {
+                srcDirs 'res'
+            }
+            manifest.srcFile 'AndroidManifest.xml'
+
+            jni.srcDirs = []
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+    defaultConfig {
+        targetSdkVersion 29
+        minSdkVersion 9
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "x86_64"
+        }
+    }
+
+
+}
