@@ -24,6 +24,9 @@ allprojects {
         maven {
             url "$rootDir/reactnativedemolibrary/node_modules/jsc-android/dist"
         }
+//        maven {
+//            url "$rootDir/reactnativedemolibrary/node_modules/react-native-immersive/android"
+//        }
     }
 
     repositories {
