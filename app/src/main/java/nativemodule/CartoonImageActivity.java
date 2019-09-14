@@ -47,7 +47,7 @@ public class CartoonImageActivity extends AppCompatActivity {
         findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ReactDemoActivity.openActivity(CartoonImageActivity.this,imageUrl);
+                OptionChooser.openActivity(CartoonImageActivity.this,imageUrl);
 
             }
         });

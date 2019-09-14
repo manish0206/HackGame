@@ -41,6 +41,7 @@
         <activity android:name="nativemodule.MainActivity" />
         <activity android:name="nativemodule.ImageChooserActivity" />
         <activity android:name="nativemodule.CartoonImageActivity" />
+        <activity android:name="nativemodule.OptionChooser" />
     </application>
 
 </manifest>

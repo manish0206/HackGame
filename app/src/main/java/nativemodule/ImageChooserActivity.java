@@ -142,9 +142,9 @@ public class ImageChooserActivity extends AppCompatActivity {
                 try {
                     Bitmap bitmap = manageImageFromUri(data.getData());
                     if (bitmap != null) {
-                        imageView.setImageBitmap(bitmap);
+                        imageView.setImageBitmap(BlurBuilder.blur(ImageChooserActivity.this,bitmap));
                         Bitmap filteredBitmap = ImageFilter.getFilteredBitmap(bitmap);
-                        finalPath = saveToExternalStorage(filteredBitmap,"SB_"+Calendar.getInstance().getTimeInMillis());
+                        finalPath = saveToExternalStorage(BlurBuilder.blur(ImageChooserActivity.this,filteredBitmap),"SB_"+Calendar.getInstance().getTimeInMillis());
                         Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
@@ -159,7 +159,7 @@ public class ImageChooserActivity extends AppCompatActivity {
             if (thumbnail != null) {
                 imageView.setImageBitmap(thumbnail);
                 Bitmap filteredBitmap = ImageFilter.getFilteredBitmap(thumbnail);
-                finalPath = saveToExternalStorage(filteredBitmap,"SB_"+Calendar.getInstance().getTimeInMillis());
+                finalPath = saveToExternalStorage(BlurBuilder.blur(ImageChooserActivity.this,filteredBitmap),"SB_"+Calendar.getInstance().getTimeInMillis());
                 Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
             }
         }

@@ -20,11 +20,14 @@ import cn.Ragnarok.BitmapFilter;
 import cn.Ragnarok.SketchFilter;
 
 public class ImageFilter {
-    public static final double sigma = 8.0;
+    public static final double sigma = 0.9;
 
     public static Bitmap getFilteredBitmap(Bitmap bitmap) {
         Bitmap resizedBitmap = getResizedBitmap(bitmap, 100, 100);
-        return BitmapFilter.changeStyle(resizedBitmap, BitmapFilter.INVERT_STYLE, sigma);
+        return  resizedBitmap;
+//        return BitmapFilter.changeStyle(resizedBitmap, BitmapFilter.INVERT_STYLE, sigma);
+//        return BitmapFilter.changeStyle(resizedBitmap, BitmapFilter.GAUSSIAN_BLUR_STYLE, sigma);
+
 
     }
 
@@ -72,4 +75,6 @@ public class ImageFilter {
         Bitmap bitmap =BitmapFactory.decodeFile(imageFilePath.getAbsolutePath(),bmOptions);
         return bitmap;
     }
+
+
     }

@@ -73,11 +73,12 @@ public final class ReactNativeDemoLibrary {
      * @param useDeveloperSupport Pass {@code true} to load JS from development server. This requires
      *                            overlay permission. Host applications should generally pass {@code false}.
      *                            Pass the same value every time.
+     * @param value
      * @return a new react-native "HelloWorld" {@link ReactRootView}.
      * @throws IllegalArgumentException if {@code activity == null} or this method has previously
      *                                  been called with a different value for {@code useDeveloperSupport}.
      */
-    public static View createHelloWorldView(@NonNull Activity activity, boolean useDeveloperSupport,String imageUrl) {
+    public static View createHelloWorldView(@NonNull Activity activity, boolean useDeveloperSupport, String imageUrl, int value) {
         //noinspection ConstantConditions
         if (activity == null) {
             throw new IllegalArgumentException("Null activity passed to ReactNativeDemoLibrary.start");
@@ -111,7 +112,8 @@ public final class ReactNativeDemoLibrary {
         ReactRootView reactRootView = new ReactRootView(activity);
         Bundle updatedProps = new Bundle();
         updatedProps.putString("images", imageUrl);
-        reactRootView.startReactApplication(reactInstanceManager, "HelloWorld",updatedProps);
+        updatedProps.putInt("emoType", value);
+        reactRootView.startReactApplication(reactInstanceManager, "HelloWorld", updatedProps);
         return reactRootView;
     }
 
