@@ -99,9 +99,9 @@ public final class ReactNativeDemoLibrary {
                     .setJSMainModulePath("index")
                     .addPackage(new MainReactPackage())
                     .addPackage(new DemoReactPackage())
-/*
+
                     .addPackage(new RNImmersivePackage())
-*/
+
                     .addPackage(new SvgPackage())
                     .setUseDeveloperSupport(useDeveloperSupport)
                     .setInitialLifecycleState(LifecycleState.BEFORE_RESUME)

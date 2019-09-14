@@ -3,10 +3,12 @@ package nativemodule;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 
+import cn.Ragnarok.BitmapFilter;
+
 public class Sketch {
       //  type = 3(Negative), 4(Pencil Sketch), 5(Color Pencil Sketch)
       public static final Bitmap changeToSketch(Bitmap bitmap) {
-         return changeToSketch(bitmap, 4,120);
+         return changeToSketch(bitmap, 4,110);
       }    
      
       public static final Bitmap changeToSketch(Bitmap src,int type,int threshold) {
@@ -48,7 +50,7 @@ public class Sketch {
                 result.setPixel(x + 1, y + 1, Color.argb(A, R, G, B));
             }
         }
-        return result;
+        return BitmapFilter.changeStyle(src, BitmapFilter.GRAY_STYLE,6.0);
       }
              
 

@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -29,6 +30,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
+import cn.Ragnarok.BitmapFilter;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -43,7 +45,11 @@ public class ImageChooserActivity extends AppCompatActivity {
     private String finalPath = "";
     RoundedImageView imageView;
     private static final int MY_CAMERA_REQUEST_CODE = 100;
-    private static final  int MY_GALLERY_REQUEST=1100;
+    File file;
+    Uri uri;
+    Intent CamIntent, GalIntent, CropIntent;
+    public static final int RequestPermissionCode = 1;
+    private static final int MY_GALLERY_REQUEST = 1100;
 
 
     public static void openActivity(Context context) {
@@ -55,7 +61,7 @@ public class ImageChooserActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_chooser);
-        imageView=findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imageView);
         findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,14 +87,14 @@ public class ImageChooserActivity extends AppCompatActivity {
 
     private void choosePhotoFromGallary() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED||checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_GALLERY_REQUEST);
-            }else{
+            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED || checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_GALLERY_REQUEST);
+            } else {
                 Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                         MediaStore.Images.Media.INTERNAL_CONTENT_URI);
                 startActivityForResult(galleryIntent, GALLERY);
             }
-        }else {
+        } else {
             Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                     MediaStore.Images.Media.INTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, GALLERY);
@@ -98,17 +104,18 @@ public class ImageChooserActivity extends AppCompatActivity {
 
     private void takePhotoFromCamera() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED||checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_CAMERA_REQUEST_CODE);
-            }else{
+            if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED || checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_CAMERA_REQUEST_CODE);
+            } else {
                 Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intent, CAMERA);
             }
-        }else {
+        } else {
             Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
             startActivityForResult(intent, CAMERA);
         }
     }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -120,7 +127,7 @@ public class ImageChooserActivity extends AppCompatActivity {
                 Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
             }
         }
-        if(requestCode == MY_GALLERY_REQUEST){
+        if (requestCode == MY_GALLERY_REQUEST) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "Gallery permission granted", Toast.LENGTH_LONG).show();
                 choosePhotoFromGallary();
@@ -129,6 +136,7 @@ public class ImageChooserActivity extends AppCompatActivity {
             }
         }
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -140,11 +148,10 @@ public class ImageChooserActivity extends AppCompatActivity {
         if (requestCode == GALLERY) {
             if (data != null) {
                 try {
-                    Bitmap bitmap = manageImageFromUri(data.getData());
+                    final Bitmap bitmap = manageImageFromUri(data.getData());
                     if (bitmap != null) {
-                        imageView.setImageBitmap(BlurBuilder.blur(ImageChooserActivity.this,bitmap));
-                        Bitmap filteredBitmap = ImageFilter.getFilteredBitmap(bitmap);
-                        finalPath = saveToExternalStorage(BlurBuilder.blur(ImageChooserActivity.this,filteredBitmap),"SB_"+Calendar.getInstance().getTimeInMillis());
+                        imageView.setImageBitmap(bitmap);
+                        finalPath = saveToExternalStorage(bitmap, "SB_" + Calendar.getInstance().getTimeInMillis());
                         Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
@@ -154,12 +161,10 @@ public class ImageChooserActivity extends AppCompatActivity {
             }
 
         } else if (requestCode == CAMERA) {
-            Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
-
+            final Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
             if (thumbnail != null) {
                 imageView.setImageBitmap(thumbnail);
-                Bitmap filteredBitmap = ImageFilter.getFilteredBitmap(thumbnail);
-                finalPath = saveToExternalStorage(BlurBuilder.blur(ImageChooserActivity.this,filteredBitmap),"SB_"+Calendar.getInstance().getTimeInMillis());
+                finalPath = saveToExternalStorage(thumbnail, "SB_" + Calendar.getInstance().getTimeInMillis());
                 Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
             }
         }
@@ -190,18 +195,19 @@ public class ImageChooserActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) {
 
             }
+
             @Override
             public void onFailure(Call call, Throwable t) {
             }
         });
     }
 
-    private String saveToInternalStorage(Bitmap bitmapImage){
+    private String saveToInternalStorage(Bitmap bitmapImage) {
         ContextWrapper cw = new ContextWrapper(getApplicationContext());
         // path to /data/data/yourapp/app_data/imageDir
         File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
         // Create imageDir
-        File mypath=new File(directory,"profile.jpg");
+        File mypath = new File(directory, "profile.jpg");
 
         FileOutputStream fos = null;
         try {
@@ -234,6 +240,7 @@ public class ImageChooserActivity extends AppCompatActivity {
         return bitmap;
 
     }
+
     public static String saveToExternalStorage(Bitmap bitmap, String fileName) {
         File directory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/StressBuster/");
 

@@ -3,10 +3,8 @@ package cn.Ragnarok;
 import android.graphics.Bitmap;
 
 public class GaussianBlurFilter {
-	static {
-		System.loadLibrary("AndroidImageFilter");
-	}
-	
+
+
 	public static Bitmap changeToGaussianBlur(Bitmap bitmap, double sigma) {
 		int ksize = (int) (sigma * 3 + 1);
 		if (ksize == 1) {

@@ -4,10 +4,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/image9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:fontFamily="@font/appleberry_with_cyrillic"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Select your weapon"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+         />
+
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="4"
+        android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/image9"
         android:orientation="vertical">
 
@@ -63,18 +80,5 @@
             app:layout_constraintTop_toBottomOf="@id/image12" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/image9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
-        android:fontFamily="@font/appleberry_with_cyrillic"
-        android:gravity="center_horizontal"
-        android:text="Select your weapon"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
