@@ -11,62 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb7e573-4a57-4a8d-8cd4-070b1d673bde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__info_androidhive_imagefilters_1_0_7_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/BlurBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/Sketch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/love.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_adapter_rxjava2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/CartoonImageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/CartoonImageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageChooserActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageChooserActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nativemodule/ReactDemoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nativemodule/ReactDemoActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/optionchooser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/optionchooser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/.transforms/2062fcd21947e358fcdcffaaf0d19448.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/.transforms/2062fcd21947e358fcdcffaaf0d19448/full/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/generated/source/buildConfig/androidTest/debug/cn/Ragnarok/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/cn/Ragnarok/SketchFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/cn/Ragnarok/SketchFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/.transforms/522915578a0d8c33607b0b0df33c7147.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/.transforms/522915578a0d8c33607b0b0df33c7147/full/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/generated/source/buildConfig/androidTest/debug/com/rnimmersive/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/.transforms/899bd4c0f7ac605bca5c987518600a97.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/.transforms/899bd4c0f7ac605bca5c987518600a97/full/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/generated/source/buildConfig/androidTest/debug/com/horcrux/svg/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-svg/android/build/intermediates/merged_manifests/debugAndroidTest/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactnativedemolibrary/src/main/java/com/contoso/reactnativedemolibrary/ReactNativeDemoLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/reactnativedemolibrary/src/main/java/com/contoso/reactnativedemolibrary/ReactNativeDemoLibrary.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,6 +156,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/ImageChooserActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -220,8 +182,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/optionchooser.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="19" column="46" selection-start-line="19" selection-end-line="20" />
+            <state relative-caret-position="195">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2" />
@@ -241,15 +203,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="451">
               <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/src/cn/Ragnarok/NativeFilterFunc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -308,7 +261,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/contoso/demoapp/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/ReactDemoActivity.java" />
         <option value="$PROJECT_DIR$/reactnativedemolibrary/src/main/java/com/contoso/reactnativedemolibrary/ReactNativeDemoLibrary.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java" />
         <option value="$PROJECT_DIR$/reactnativedemolibrary/node_modules/react-native-immersive/android/build.gradle" />
         <option value="$PROJECT_DIR$/reactnativedemolibrary/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/CartoonImageActivity.java" />
@@ -319,6 +271,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/ImageFilter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/BlurBuilder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/Sketch.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/optionchooser.xml" />
       </list>
     </option>
@@ -543,7 +496,7 @@
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3297568" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Image Layers" order="5" />
@@ -558,8 +511,8 @@
       <window_info anchor="bottom" id="Run" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.7325301" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19277108" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.19277108" />
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="right" id="Hierarchy" weight="0.3297568" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -907,16 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/src/cn/Ragnarok/NativeFilterFunc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -955,9 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -995,10 +935,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/nativemodule/OptionChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/optionchooser.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="19" column="46" selection-start-line="19" selection-end-line="20" />
+        <state relative-caret-position="195">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
