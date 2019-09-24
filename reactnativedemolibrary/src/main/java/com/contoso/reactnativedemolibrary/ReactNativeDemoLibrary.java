@@ -17,7 +17,8 @@ import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.shell.MainReactPackage;
 import com.horcrux.svg.SvgPackage;
-import com.rnimmersive.RNImmersivePackage;
+//import com.rnimmersive.RNImmersivePackage;
+import com.zmxv.RNSound.RNSoundPackage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -100,7 +101,10 @@ public final class ReactNativeDemoLibrary {
                     .addPackage(new MainReactPackage())
                     .addPackage(new DemoReactPackage())
 
-                    .addPackage(new RNImmersivePackage())
+                    .addPackage(new RNSoundPackage())
+
+
+//                    .addPackage(new RNImmersivePackage())
 
                     .addPackage(new SvgPackage())
                     .setUseDeveloperSupport(useDeveloperSupport)

@@ -1,5 +1,7 @@
 include ':app', ':reactnativedemolibrary', ':library'
-include ':react-native-immersive'
+//include ':react-native-immersive'
 include ':react-native-svg'
+include ':react-native-sound'
 project(':react-native-svg').projectDir = new File(rootProject.projectDir, './reactnativedemolibrary/node_modules/react-native-svg/android')
-project(':react-native-immersive').projectDir = new File(rootProject.projectDir, './reactnativedemolibrary/node_modules/react-native-immersive/android')
+//project(':react-native-immersive').projectDir = new File(rootProject.projectDir, './reactnativedemolibrary/node_modules/react-native-immersive/android')
+project(':react-native-sound').projectDir = new File(rootProject.projectDir, './reactnativedemolibrary/node_modules/react-native-sound/android')

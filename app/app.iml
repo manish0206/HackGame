@@ -147,7 +147,6 @@
     <orderEntry type="library" name="Gradle: com.makeramen:roundedimageview:2.3.0@aar" level="project" />
     <orderEntry type="module" module-name="reactnativedemolibrary" />
     <orderEntry type="module" module-name="library" />
-    <orderEntry type="module" module-name="react-native-immersive" />
     <orderEntry type="module" module-name="react-native-svg" />
   </component>
 </module>

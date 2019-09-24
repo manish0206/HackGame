@@ -118,6 +118,8 @@ dependencies {
     api 'org.webkit:android-jsc:+'
 
     testImplementation 'junit:junit:4.12'
-    compile project(path: ':react-native-immersive')
+//    compile project(path: ':react-native-immersive')
     compile project(path: ':react-native-svg')
+    implementation project(path: ':react-native-sound')
 }
+

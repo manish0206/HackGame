@@ -10,7 +10,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
-import com.rnimmersive.RNImmersivePackage;
+//import com.rnimmersive.RNImmersivePackage;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

@@ -9,6 +9,7 @@ import {
   TouchableWithoutFeedback,
   TouchableHighlight,
   Modal,
+  AppState,
   ImageBackground,
 } from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
@@ -29,7 +30,10 @@ import {
   potHoleSettings,
 } from './settings';
 
-
+import Sound from 'react-native-sound';
+Sound.setCategory('Playback');
+   
+const requireAudio = require('./sound.mp3');
 
 const {Bodies} = Matter;
 
@@ -160,7 +164,13 @@ export default class App extends PureComponent {
       shoot: false,
       hold: false,
       ballPotted: false,
-      timer: 60,
+      timer: 120,
+         appState: AppState.currentState,
+      bgSound: new Sound(requireAudio, Sound.MAIN_BUNDLE, error => {
+if (error) {
+console.warn('failed to load the sound', error);
+}
+}),
     };
 
     this.setModalVisible = visible => {
@@ -212,7 +222,7 @@ export default class App extends PureComponent {
         shoot: false,
         hold: false,
         collision: false,
-        timer: 60,
+        timer: 120,
         gameOver: false,
       }));
       this.stopBall();
@@ -365,13 +375,44 @@ export default class App extends PureComponent {
       //        return true;
       //      }
     };
+
+
+
+
+  this.playMusic = () => {
+		this.state.bgSound.play(success => {
+		if (success) {
+		console.warn("successfully finished playing");
+		} else {
+		console.warn('playback failed due to audio decoding errors');
+		}
+		});
+		this.state.bgSound.setVolume(0.7);
+		this.state.bgSound.setNumberOfLoops(-1);
+		}
   }
 
-  componentWillUnmount() {
+ 
+
+  _handleAppStateChange = nextAppState => {
+if (this.state.appState.match(/inactive|background/) && nextAppState === 'active') {
+console.log('App has come to the foreground!');
+}
+if (nextAppState.match(/inactive|background/)) {
+this.state.bgSound.stop(()=>{});
+} else if (nextAppState === 'active') {
+this.playMusic();
+}
+
+this.setState({ appState: nextAppState });
+};
+ componentWillUnmount() {
+AppState.removeEventListener('change', this._handleAppStateChange);
     clearInterval(this.interval);
-  }
+}
 
   componentDidMount(): Promise<void> {
+  	 AppState.addEventListener('change', this._handleAppStateChange);
     this.interval = setInterval(
       () =>
         this.setState(prevState => ({
@@ -483,7 +524,13 @@ setTimeout(() => {
     });
   }
 
-  componentDidUpdate() {
+
+  componentDidUpdate(prevProps) {
+  	if(this.props.emoType !== '' && this.state.appState==='active'){
+this.playMusic();
+
+  	}
+
     this.isGameOver();
     // if (this.checkIfResetTimer()) {
     //  this.setState({
@@ -521,7 +568,8 @@ setTimeout(() => {
   }
 
   render() {
-    const {images}=this.props;
+    const {images,emoType}=this.props;
+   
     return (
       <ImageBackground source={require('./stress_7.jpg')} style={{width: '100%', height: '100%'}}>
       <GameEngine
@@ -539,6 +587,7 @@ setTimeout(() => {
             size: BALL_RADIUS / 2,
             isPivot: true,
             isImage:false,
+            emoType,
           },
           myPotHole: {
             body: potHole,
@@ -547,6 +596,8 @@ setTimeout(() => {
             images,
             size: BALL_RADIUS * 2.5,
             falseShow,
+            emoType,
+
           },
           myFinger: {
             body: rock,
@@ -554,6 +605,7 @@ setTimeout(() => {
             renderer: Circle,
             color: 'green',
             isImage:true,
+            emoType,
           },
           myline: {
             rock,
@@ -620,21 +672,23 @@ setTimeout(() => {
             transparent={true}
             visible={this.state.gameOver}
             presentationStyle="overFullScreen">
-            <View style={styles.gameOver}>
-              <View>
-                <Text style={styles.text}>GAME OVER!</Text>
-
-                <TouchableHighlight
+            <TouchableWithoutFeedback
                   onPress={() => {
                     this.setState({
                       gameOver: false,
                     });
                     this.handleRestart();
                   }}>
+            <View style={styles.gameOver}>
+              <View>
+                <Text style={styles.text}>GAME OVER!</Text>
+
+                
                   <Text style={styles.text1}>Try again?</Text>
-                </TouchableHighlight>
               </View>
             </View>
+                            </TouchableWithoutFeedback>
+
           </Modal>
         </View>
       </GameEngine>

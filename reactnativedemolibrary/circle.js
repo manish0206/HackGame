@@ -9,15 +9,15 @@ const GAME_HEIGHT = SCREEN_HEIGHT - SCREEN_HEIGHT / 10;
 
 const BORDER_WIDTH = Math.trunc(BALL_SIZE * 0.1);
 
-const Circle = ({body, color, size: radius, isPivot,isImage}) => {
+const Circle = ({body, color, size: radius, isPivot,isImage,emoType}) => {
 	const {position} = body;
-
+const obj=[require('./in-love.png'),require('./anger.png'),require('./tomato.png'),require('./egg1.png')];
 	const {x, y} = position;
 	if (!x) {
 		return null;
 	}
 		if(isImage){
-			return <Image source={require('./tomato.png')} style={[
+			return <Image source={obj[emoType-1]} style={[
 						styles.head,
 						{
 							left: isPivot ? x + radius : x,
@@ -29,8 +29,7 @@ const Circle = ({body, color, size: radius, isPivot,isImage}) => {
 						}
 					]}/>
 		}
-	return (
-		
+	return (		
 		<View
 			style={[
 				styles.head,

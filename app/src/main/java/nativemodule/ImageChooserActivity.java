@@ -163,9 +163,13 @@ public class ImageChooserActivity extends AppCompatActivity {
         } else if (requestCode == CAMERA) {
             final Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
             if (thumbnail != null) {
-                imageView.setImageBitmap(thumbnail);
-                finalPath = saveToExternalStorage(thumbnail, "SB_" + Calendar.getInstance().getTimeInMillis());
+                Bitmap bitmap= ImageFilter.rotateImage(thumbnail,90);
+                imageView.setImageBitmap(bitmap);
+                finalPath = saveToExternalStorage(bitmap, "SB_" + Calendar.getInstance().getTimeInMillis());
                 Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
+//                imageView.setImageBitmap(thumbnail);
+//                finalPath = saveToExternalStorage(thumbnail, "SB_" + Calendar.getInstance().getTimeInMillis());
+//                Toast.makeText(ImageChooserActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
             }
         }
     }
